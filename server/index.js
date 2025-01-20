@@ -7,12 +7,15 @@ const db = require('./Db/ConfigDb');
 const app = express();
 const PORT = 5000;
 
-// CORS configuration to allow requests only from specific origin
+// CORS configuration to allow requests only from a specific origin
 const corsOptions = {
-    origin: 'https://chat-bot-durgamahithjadapolus-projects.vercel.app/',  // Remove the trailing slash
-    methods: ['GET', 'POST'],         // Allow only GET and POST methods
+    origin: 'https://chat-bot-durgamahithjadapolus-projects.vercel.app', // Correct origin without trailing slash
+    methods: ['GET', 'POST', 'OPTIONS'], // Include OPTIONS for preflight requests
     allowedHeaders: ['Content-Type'], // Allow specific headers
-  };
+    credentials: true, // Allow cookies if needed
+};
+
+
   
 
 // Middleware
