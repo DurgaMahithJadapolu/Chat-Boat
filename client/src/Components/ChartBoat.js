@@ -14,7 +14,7 @@ const App = () => {
     setMessages((prev) => [...prev, userMessage]);
 
     try {
-      const res = await axios.post('http://localhost:5000/api/send-message', { userMessage: input });
+      const res = await axios.post('https://chat-boat-backend-pgwb.onrender.com/api/send-message', { userMessage: input });
       const botMessage = { sender: 'bot', text: res.data.response };
       setMessages((prev) => [...prev, botMessage]);
     } catch (err) {
