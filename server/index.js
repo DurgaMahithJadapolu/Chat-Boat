@@ -9,7 +9,7 @@ const PORT = 5000;
 
 // CORS configuration to allow requests only from specific origin
 const corsOptions = {
-    origin: 'http://localhost:3001',  // Remove the trailing slash
+    origin: 'https://chat-bot-durgamahithjadapolus-projects.vercel.app/',  // Remove the trailing slash
     methods: ['GET', 'POST'],         // Allow only GET and POST methods
     allowedHeaders: ['Content-Type'], // Allow specific headers
   };
