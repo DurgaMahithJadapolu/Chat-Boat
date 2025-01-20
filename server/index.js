@@ -16,11 +16,17 @@ const corsOptions = {
 };
 
 
+
   
 
 // Middleware
 app.use(cors(corsOptions));
 app.use(bodyParser.json());
+
+
+app.get('/ping', (req, res) => {
+  res.json({ message: 'Server is running!' });
+});
 
 // Routes
 app.use('/api', chatbotRoutes);
