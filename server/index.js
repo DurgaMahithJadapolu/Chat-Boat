@@ -9,7 +9,7 @@ const PORT = 5000;
 
 // CORS configuration to allow requests only from a specific origin
 const corsOptions = {
-    origin: 'https://chat-bot-durgamahithjadapolus-projects.vercel.app', // Correct origin without trailing slash
+    origin: 'https://chat-bot-tawny-sigma.vercel.app/', // Correct origin without trailing slash
     methods: ['GET', 'POST', 'OPTIONS'], // Include OPTIONS for preflight requests
     allowedHeaders: ['Content-Type'], // Allow specific headers
     credentials: true, // Allow cookies if needed
